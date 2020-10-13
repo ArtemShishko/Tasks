@@ -89,7 +89,7 @@ class TasksFragment : Fragment(R.layout.fragment_tasks) {
     }
 
     private fun setupRecyclerView() {
-        tasksAdapter = TaskItemAdapter(mutableListOf(), viewModel)
+        tasksAdapter = TaskItemAdapter(listOf(), viewModel)
         rvItems.apply {
             adapter = tasksAdapter
             layoutManager = LinearLayoutManager(activity)
